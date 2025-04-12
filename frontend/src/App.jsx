@@ -11,6 +11,8 @@ import PublishCourseDetails from './pages/Forms/PublishCourseDetails';
 import CourseSummary from './pages/Forms/CourseSummary';
 import MTrainingCenter from './pages/Masters/MTrainingCenter';
 import UploadIFHRMSData from './pages/Forms/UploadIFHRMSData';
+import HopfLetterOutside from './pages/Forms/HopfLetterOutside';
+import HopfOutsideComUpload from './pages/Forms/HopfOutsideComUpload';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/CourseSummary" element={<CourseSummary />} />
         <Route path="/MTrainingCenter" element={<MTrainingCenter />} />
         <Route path='/UploadIFHRMSData' element={<UploadIFHRMSData />} />
+        <Route path="/HopfLetterOutside" element={<HopfLetterOutside/>} />
+        <Route path="/HopfOutsideComUpload/:id" element={<HopfOutsideComUpload />} />
       </Routes>
     </BrowserRouter>
   )
