@@ -1,8 +1,13 @@
 import React from 'react'
+import TrainingDirectorateCounter from '../../components/Dashboard/TrainingDirectorateCounter'
+import TrainingDirectorateCard from '../../components/Dashboard/TrainingDirectorateCard'
 
 function TrainingDirectorate() {
   return (
-    <div>TrainingDirectorate</div>
+    <>
+    <TrainingDirectorateCounter />     
+    <TrainingDirectorateCard /> 
+    </>
   )
 }
 
