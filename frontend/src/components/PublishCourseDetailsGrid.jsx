@@ -27,7 +27,7 @@ function PublishCourseDetailsGrid() {
         <div>
           {params.value?.btn1 && (
             <Button variant="contained" color="secondary" onClick={() => handleAction(params.row, "Publish")}>
-            Publish
+            <a href='/CreateCourse' className='text-white'>Publish</a>
             </Button>
           )}
         </div>
