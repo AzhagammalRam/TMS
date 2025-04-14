@@ -6,7 +6,7 @@ import { logo } from '../../assets/images';
 import { Avatar } from '@mui/material';
 
 
-function NavBar() {
+function CenterNavBar() {
   return (
     <Navbar expand="lg" className="bg-white">
       <Container fluid>
@@ -18,7 +18,7 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="/TrainingDirectorate">Home</Nav.Link>
             <Nav.Link href="#action2">Data Bank</Nav.Link>
             <Nav.Link href="/CreateCourse">Create & Publish Course</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
@@ -36,10 +36,10 @@ function NavBar() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <div className="d-flex me-2 title-clr"><Avatar style={{background:'#232771'}}/><h6 className='title-clr mt-2'>Training Directorate</h6></div>
+        <div className="d-flex me-2 title-clr"><Avatar style={{background:'#232771'}}/><h6 className='title-clr mt-2'>&nbsp;&nbsp;Training Center</h6></div>
       </Container>
     </Navbar>
   );
 }
 
-export default NavBar;
+export default CenterNavBar;

@@ -187,7 +187,7 @@ function CreateCourseForm() {
                     </div>
                   </div>
                   <Row>
-                    <Col dir="rtl" className='txt-align-center'><Button className="btn btn-success mb-2">Publish</Button></Col>
+                    <Col dir="rtl" className='txt-align-center'><Button className="btn btn-success mb-2"><a   href='/CourseSummary' className='text-white'>Publish</a></Button></Col>
                   </Row>
                 </div>
               </div>
