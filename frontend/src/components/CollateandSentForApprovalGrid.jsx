@@ -4,18 +4,12 @@ import { DataGrid } from "@mui/x-data-grid";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import ForumIcon from '@mui/icons-material/Forum';
 import { useNavigate } from 'react-router-dom';
+import { FaPaperPlane } from "react-icons/fa";
 
-function HopfLetterOutsideGrid() {
+function CollateandSentForApprovalGrid() {
     const navigate = useNavigate();
 
-  const handleAction = (row, actionType) => {
-    console.log(`Action: ${actionType} on course ${row.courseName}`);
-    if (actionType === "Upload HoPF Approval") {
-      navigate(`/HopfOutsideComUpload/${row.id}`);
-    } else if (actionType === "Communicate Approval") {
-      navigate(`/HopfOutsideComApproval/${row.id}`);
-    }
-  };
+ 
 
   const columns = [
     { field: "id", headerName: "S.No", width: 70 },
@@ -30,7 +24,7 @@ function HopfLetterOutsideGrid() {
     { field: "toDate", headerName: "To Date", width: 180 },
     // { field: "noOfDays", headerName: "No. of Days", width: 180 },
     { field: "status", headerName: "Status", width: 120 },
-    { field: "HoPFApproval", headerName: "HoPF Approval", width: 180 },
+    { field: "nominationReceived", headerName: "Nominations Received", width: 180 },
     {
       field: "action",
       headerName: "Actions",
@@ -39,22 +33,15 @@ function HopfLetterOutsideGrid() {
         <div>
           {params.value?.btn1 && (
             <>
-              <Tooltip title="Upload HoPF Approval">
+              <Tooltip title="Send For Approval">
                 <IconButton
                   color="primary"
-                  onClick={() => handleAction(params.row, "Upload HoPF Approval")}
+                  onClick={() => navigate(`/CollateandSentForApproval/${params.row.id}`)}
                 >
-                  <CloudUploadIcon />
+                 <FaPaperPlane />
                 </IconButton>
               </Tooltip>
-              <Tooltip title="Communicate Approval (Outside State)">
-                <IconButton
-                  color="secondary"
-                  onClick={() => handleAction(params.row, "Communicate Approval")}
-                >
-                  <ForumIcon />
-                </IconButton>
-              </Tooltip>
+             
             </>
           )}
         </div>
@@ -65,9 +52,9 @@ function HopfLetterOutsideGrid() {
   const GridData = [
     {
       id: 1,
-      courseName: 'PTS/Vellore/Dec2024',
-      trainingCenter: 'Training Center 1',
-      location: 'Vellore',
+      courseName: 'cyber security',
+      trainingCenter: 'Bhopal',
+      location: 'Bhopal',
       contactPerson: "Sujatha",
       phone: "9876543210",
       whatsapp: "9876543210",
@@ -76,14 +63,14 @@ function HopfLetterOutsideGrid() {
       toDate: "2024-04-05",
       // noOfDays: 5,
       status: "Pending",
-      HoPFApproval: "Pending",
+      nominationReceived: "Yes",
       action: { btn1: "Upload", btn2: "Communicate" },
     },
     {
       id: 2,
-      courseName: 'PTS/Vellore/Dec2024',
-      trainingCenter: 'Training Center 2',
-      location: 'Vellore',
+      courseName: 'cyber security',
+      trainingCenter: 'Bhopal',
+      location: 'Bhopal',
       contactPerson: "Rithika",
       phone: "9876543222",
       whatsapp: "9876543222",
@@ -92,7 +79,7 @@ function HopfLetterOutsideGrid() {
       toDate: "2024-04-10",
       // noOfDays: 5,
       status: "Approved",
-      HoPFApproval: "Approved",
+      nominationReceived: "No",
       action: { btn1: "Upload", btn2: "Communicate" },
     },
   ]; 
@@ -106,7 +93,7 @@ function HopfLetterOutsideGrid() {
               <div className="card-header">
                 <h4 className='title-clr'>
                   <i className="bi bi-table me-2"></i>
-                  HoPF Approval letter and Outside State communication
+                  Collate and Sent for Approval - Outside State
                 </h4>
               </div>
               <div className="card-body">
@@ -152,4 +139,4 @@ function HopfLetterOutsideGrid() {
   );
 }
 
-export default HopfLetterOutsideGrid;
+export default CollateandSentForApprovalGrid;

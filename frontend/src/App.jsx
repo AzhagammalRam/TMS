@@ -13,6 +13,11 @@ import MTrainingCenter from './pages/Masters/MTrainingCenter';
 import UploadIFHRMSData from './pages/Forms/UploadIFHRMSData';
 import HopfLetterOutside from './pages/Forms/HopfLetterOutside';
 import HopfOutsideComUpload from './pages/Forms/HopfOutsideComUpload';
+import HopfOutsideComApproval from './pages/Forms/HopfOutsideComApproval';
+import ApprovedListInternalCom from './pages/Forms/ApprovedListInternalCom';
+import ApprovedListInternalComGrid2 from './components/ApprovedListInternalComGrid2';
+import CollateandSentforApproval from './pages/Forms/CollateandSentforApproval';
+import CollateandsentapprovalList from './pages/Forms/CollateandsentapprovalList';
 
 function App() {
   return (
@@ -31,6 +36,11 @@ function App() {
         <Route path='/UploadIFHRMSData' element={<UploadIFHRMSData />} />
         <Route path="/HopfLetterOutside" element={<HopfLetterOutside/>} />
         <Route path="/HopfOutsideComUpload/:id" element={<HopfOutsideComUpload />} />
+        <Route path="/HopfOutsideComApproval/:id" element={<HopfOutsideComApproval/>} />
+        <Route path="/ApprovedListInternalCommunication" element={<ApprovedListInternalCom/>} />
+        <Route path="/ApprovedListInternalCommunicationList/:id" element={<ApprovedListInternalComGrid2/>} />
+        <Route path="/CollateandSent" element={<CollateandSentforApproval/>} />
+        <Route path="/CollateandSentForApproval/:id" element={<CollateandsentapprovalList/> }   />
       </Routes>
     </BrowserRouter>
   )

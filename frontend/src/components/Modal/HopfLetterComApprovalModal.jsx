@@ -27,7 +27,7 @@ const style = {
   pb: 5,
 };
 
-const HopfLetterUploadModal = ({ open, handleClose, handleSubmit }) => {
+const HopfLetterComApprovalModal = ({ open, handleClose, handleSubmit }) => {
   const [refNumber, setRefNumber] = useState('');
   const [docName, setDocName] = useState('');
   const [docType, setDocType] = useState('');
@@ -130,4 +130,4 @@ const HopfLetterUploadModal = ({ open, handleClose, handleSubmit }) => {
   );
 };
 
-export default HopfLetterUploadModal;
+export default HopfLetterComApprovalModal;

@@ -5,8 +5,10 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import HopfLetterUploadModal from "./Modal/HopfLetterUploadModal";
 import { useState } from "react";
+import HopfLetterComApprovalModal from './Modal/HopfLetterComApprovalModal';
+import UploadFileRoundedIcon from '@mui/icons-material/UploadFileRounded';
 
-function HopfOutsideComUploadGrid() {
+function HopfOutsideComApprovalGrid() {
    
     const [modalOpen, setModalOpen] = useState(false);
 
@@ -37,6 +39,14 @@ function HopfOutsideComUploadGrid() {
         <div>
           {params.value?.btn1 && (
             <>
+               <Tooltip title="Generate Letter">
+                <IconButton
+                  color="success"
+                  // onClick={() => handleAction(params.row, "Upload HoPF Approval")}
+                >
+                  <UploadFileRoundedIcon />
+                </IconButton>
+              </Tooltip> 
               <Tooltip title="Upload HoPF Approval">
                 <IconButton
                   color="primary"
@@ -88,7 +98,7 @@ function HopfOutsideComUploadGrid() {
               <div className="card-header">
                 <h4 className='title-clr'>
                   <i className="bi bi-table me-2"></i>
-                  HoPF and Outside State communication - Upload
+                  HoPF and Outside State communication - Communicate Approval (Other state)
                 </h4>
               </div>
               <div className="card-body">
@@ -123,7 +133,7 @@ function HopfOutsideComUploadGrid() {
           </div>
         </div>
       </div>
-      <HopfLetterUploadModal
+      <HopfLetterComApprovalModal
   open={modalOpen}
   handleClose={() => setModalOpen(false)}
   handleSubmit={handleUploadSubmit}
@@ -132,4 +142,4 @@ function HopfOutsideComUploadGrid() {
   );
 }
 
-export default HopfOutsideComUploadGrid;
+export default HopfOutsideComApprovalGrid;

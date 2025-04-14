@@ -1,18 +1,14 @@
 import React from 'react';
 import { Button, IconButton, Tooltip } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import HopfLetterUploadModal from "./Modal/HopfLetterUploadModal";
 import { useState } from "react";
+import OutgoingMailIcon from '@mui/icons-material/OutgoingMail';
 
-function HopfOutsideComUploadGrid() {
+function ApprovedListInternalComGrid2() {
    
-    const [modalOpen, setModalOpen] = useState(false);
-
   const handleAction = (row, actionType) => {
     if (actionType === "Upload HoPF Approval") {
-      setModalOpen(true);
+      
     }
    
   };
@@ -28,7 +24,6 @@ function HopfOutsideComUploadGrid() {
     { field: "rank", headerName: "Rank", width: 130 },
     { field: "mobileNo", headerName: "Mobile No", width: 150 },
     { field: "eligibilityChecked", headerName: "Eligibility Checked", width: 120 },
-    
     {
       field: "action",
       headerName: "Actions",
@@ -37,22 +32,15 @@ function HopfOutsideComUploadGrid() {
         <div>
           {params.value?.btn1 && (
             <>
-              <Tooltip title="Upload HoPF Approval">
+               <Tooltip title="Send internal approval communication">
                 <IconButton
-                  color="primary"
-                  onClick={() => handleAction(params.row, "Upload HoPF Approval")}
+                  color="success"
+                  // onClick={() => handleAction(params.row, "Upload HoPF Approval")}
                 >
-                  <CloudUploadIcon />
+                  <OutgoingMailIcon />
                 </IconButton>
               </Tooltip> 
-              <Tooltip title="File Uploaded Successfully">
-            <IconButton
-              color="secondary"
-              onClick={() => handleAction(params.row, "Communicate Approval")}
-            >
-              <CheckCircleIcon />
-            </IconButton>
-          </Tooltip>
+             
             </>
           )}
         </div>
@@ -67,7 +55,7 @@ function HopfOutsideComUploadGrid() {
       rank: 'SI', 
       mobileNo: "9876543210",
       eligibilityChecked: "No",
-      action: { btn1: "Upload" },
+      action: { btn1: "send" },
     },
     {
       id: 2,
@@ -75,7 +63,7 @@ function HopfOutsideComUploadGrid() {
       rank: 'SI',
       mobileNo: "9876543222",
       eligibilityChecked: "Yes",
-      action: { btn1: "Upload"},
+      action: { btn1: "send"},
     },
   ]; 
 
@@ -88,7 +76,7 @@ function HopfOutsideComUploadGrid() {
               <div className="card-header">
                 <h4 className='title-clr'>
                   <i className="bi bi-table me-2"></i>
-                  HoPF and Outside State communication - Upload
+                  Approved List - Internal Communication
                 </h4>
               </div>
               <div className="card-body">
@@ -123,13 +111,9 @@ function HopfOutsideComUploadGrid() {
           </div>
         </div>
       </div>
-      <HopfLetterUploadModal
-  open={modalOpen}
-  handleClose={() => setModalOpen(false)}
-  handleSubmit={handleUploadSubmit}
-/>
+     
     </main>
   );
 }
 
-export default HopfOutsideComUploadGrid;
+export default ApprovedListInternalComGrid2;
