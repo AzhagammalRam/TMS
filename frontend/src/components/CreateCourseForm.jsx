@@ -19,9 +19,9 @@ function CreateCourseForm() {
                       <div className='col-md-7'>
                         <Form.Select className="form-control" aria-label="Default select example">
                           <option>- Select - </option>
-                          <option value="1">Tambaram</option>
-                          <option value="2">Avadi</option>
-                          <option value="3">Trichy</option>
+                          <option value="1">PTA, Bengaluru</option>
+                          <option value="2">PTA, Hyderabad</option>
+                          <option value="3">PTA, Delhi</option>
                         </Form.Select>
                       </div>
                     </div>
@@ -30,9 +30,9 @@ function CreateCourseForm() {
                       <div className='col-md-7'>
                         <Form.Select className="form-control" aria-label="Default select example">
                           <option>- Select - </option>
-                          <option value="1">Tambaram</option>
-                          <option value="2">Avadi</option>
-                          <option value="3">Trichy</option>
+                          <option value="1">Bengaluru</option>
+                          <option value="2">Hyderabad</option>
+                          <option value="3">Delhi</option>
                         </Form.Select>
                       </div>
                     </div>
@@ -96,9 +96,9 @@ function CreateCourseForm() {
                       <div className='col-md-7'>
                         <Form.Select className="form-control" aria-label="Default select example">
                           <option>- Select - </option>
-                          <option value="1">SI</option>
-                          <option value="2">AO</option>
-                          <option value="3">SAO</option>
+                          <option value="1">PC</option>
+                          <option value="2">SI</option>
+                          <option value="3">ADSP</option>
                         </Form.Select>
                       </div>
                     </div>
@@ -128,6 +128,7 @@ function CreateCourseForm() {
                           <option>- Select - </option>
                           <option value="1">Letter</option>
                           <option value="2">Mail</option>
+                          <option value="3">Fax</option>
                         </Form.Select>
                       </div>
                     </div>
@@ -145,13 +146,7 @@ function CreateCourseForm() {
                     </div>
                     <div className='col-md-4 row p-2'>
                       <div className='col-md-5'><h6 className='title-clr pt-2'>Dress Code</h6></div>
-                      <div className='col-md-7'>
-                        <Form.Select className="form-control" aria-label="Default select example">
-                          <option>- Select - </option>
-                          <option value="1">Uniform</option>
-                          <option value="2">Non-Uniform</option>
-                        </Form.Select>
-                      </div>
+                      <div className='col-md-7'><Form.Control as="textarea" rows={2} /></div>
                     </div>
                     <div className='col-md-4 row p-2'>
                       <div className='col-md-5'><h6 className='title-clr pt-2'>Comments</h6></div>
@@ -166,8 +161,8 @@ function CreateCourseForm() {
                       <div className='col-md-7'>
                         <Form.Select className="form-control" aria-label="Default select example">
                           <option>- Select - </option>
-                          <option value="1">PDF</option>
-                          <option value="2">Excel</option>
+                          <option value="1">Nomination Call Letter</option>
+                          <option value="2">HoPF Letter</option>
                         </Form.Select>
                       </div>
                     </div>
@@ -184,8 +179,9 @@ function CreateCourseForm() {
                       <div className='col-md-7'>
                         <Form.Select className="form-control" aria-label="Default select example">
                           <option>- Select - </option>
-                          <option value="1">DG</option>
-                          <option value="2">IG</option>
+                          <option value="1">All DPO</option>
+                          <option value="2">All CPO</option>
+                          <option value="3">Spl Unit</option>
                         </Form.Select>
                       </div>
                     </div>

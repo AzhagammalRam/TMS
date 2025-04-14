@@ -10,14 +10,14 @@ function TrainingDirectorateCard() {
         { name: "HoPF and Outside State Communication", cost: 9, grad: " #5eefea, #0c9f9a" },
         { name: "Approved List internal Communication", cost: 19, grad: " #f280b6, #f72589" },
         { name: "Course Completion Certificate Upload", cost: 29, grad: " #9ad366, #8df82c" },
-        { name: "Reschedule/ Cancel/ Dropouts??", cost: 29, grad: " #a16ac1, #d191f6" },
+        { name: "Status Tracking", cost: 29, grad: " #a16ac1, #d191f6" },
       ];
       const n = data.length;
 
   return (
 
     <>
-        <div className='col-md-12 mt-5 p-5 container'>
+        <div className='col-md-12 mt-3 container dashboard-card-body'>
             <div className="d-flex justify-content-center flex-wrap pricing-body col-md-12" style={{ "--n": n }}>
       {data.map((c, i) => (
         <article 

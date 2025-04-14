@@ -5,7 +5,7 @@ import Counter from './Counter'
 function TrainingDirectorateCounter() {
   return (
     <>
-    <div className='col-md-12 container-fluid'>
+    <div className='col-md-12 mt-3 container-fluid'>
         <div className="section-counter">
             <div className="counter-item">
                 <div className="counter">

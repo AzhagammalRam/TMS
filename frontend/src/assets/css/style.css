@@ -414,3 +414,6 @@
     padding: 3px !important;
     text-transform: capitalize !important;
 }
+.MuiDataGrid-filler {
+    background: #faebcc;
+}

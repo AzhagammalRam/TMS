@@ -78,7 +78,7 @@ function PublishCourseDetailsGrid() {
           <div className="col-md-12 mb-3">
             <div className="card bg-white">
               <div className="card-header">
-                <h4 className='title-clr'><i className="bi bi-table me-2"></i> Publish Course Report</h4>
+                <h4 className='title-clr'><i className="bi bi-table me-2"></i> Publish Course Details</h4>
               </div>
               <div className="card-body">
                 <div className="col-md-12 row p-3">

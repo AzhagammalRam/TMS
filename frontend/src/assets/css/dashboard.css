@@ -11,7 +11,7 @@
   
   .counter-item {
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
   
   .counter {
@@ -131,6 +131,10 @@
   body,
   body *:not(script):not(style),
   ::before {
+    /* display: grid; */
+  }
+  .dashboard-card-body *:not(script):not(style),
+  ::before  {
     display: grid;
   }
   

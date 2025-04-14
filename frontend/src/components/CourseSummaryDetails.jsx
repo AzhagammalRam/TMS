@@ -59,43 +59,10 @@ function CourseSummaryDetails() {
                       <div className='col-md-3'><h6 className='txtred'>Units: </h6></div>
                       <div className='col-md-7'><p>All Units </p></div>
                     </div>
-                    <div className='col-md-12 row'>
-                      <div className='col-md-3'><h6 className='txtred'>Is approval required?: </h6></div>
-                      <div className='col-md-7'>
-                        {['radio'].map((type) => (
-                          <div key={`inline-${type}`} className="mb-3">
-                            <Form.Check
-                              inline
-                              label="Yes"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-1`}
-                            />
-                            <Form.Check
-                              inline
-                              label="No"
-                              name="group1"
-                              type={type}
-                              id={`inline-${type}-2`}
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                    <div className='col-md-12 row'>
-                      <div className='col-md-3'><h6 className='txtred'>If yes, from whom?: </h6></div>
-                      <div className='col-md-3'>
-                        <Form.Select className="form-control" aria-label="Default select example">
-                          <option>- Select - </option>
-                          <option value="1">SI</option>
-                          <option value="2">AO</option>
-                          <option value="3">SAO</option>
-                        </Form.Select>
-                      </div>
-                    </div>
-                    <div className='col-md-12 mt-5'>
+                    <div className='col-md-12 mt-3'>
                       <Row>
-                        <Col dir="rtl" className='txt-align-center'><Button className="btn btn-success mb-2">Publish</Button></Col>
+                        <Col  className='txt-align-right'><Button className="btn btn-success mb-2">Save</Button></Col>
+                        <Col  className='txt-align-left'><Button className="btn btn-info mb-2">Publish</Button></Col>
                       </Row>
                     </div>
                   </Card.Body>
