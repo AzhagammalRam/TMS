@@ -41,6 +41,7 @@ function App() {
         <Route path="/ApprovedListInternalCommunicationList/:id" element={<ApprovedListInternalCommunicationList/>} />
         <Route path="/CollateandSent" element={<CollateandSentforApproval/>} />
         <Route path="/CollateandSentForApproval/:id" element={<CollateandsentapprovalList/> }   />
+        
       </Routes>
     </BrowserRouter>
   )
