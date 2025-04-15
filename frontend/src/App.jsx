@@ -15,7 +15,7 @@ import HopfLetterOutside from './pages/Forms/HopfLetterOutside';
 import HopfOutsideComUpload from './pages/Forms/HopfOutsideComUpload';
 import HopfOutsideComApproval from './pages/Forms/HopfOutsideComApproval';
 import ApprovedListInternalCom from './pages/Forms/ApprovedListInternalCom';
-import ApprovedListInternalComGrid2 from './components/ApprovedListInternalComGrid2';
+import ApprovedListInternalCommunicationList from './pages/Forms/ApprovedListInternalCommunicationList';
 import CollateandSentforApproval from './pages/Forms/CollateandSentforApproval';
 import CollateandsentapprovalList from './pages/Forms/CollateandsentapprovalList';
 
@@ -38,7 +38,7 @@ function App() {
         <Route path="/HopfOutsideComUpload/:id" element={<HopfOutsideComUpload />} />
         <Route path="/HopfOutsideComApproval/:id" element={<HopfOutsideComApproval/>} />
         <Route path="/ApprovedListInternalCommunication" element={<ApprovedListInternalCom/>} />
-        <Route path="/ApprovedListInternalCommunicationList/:id" element={<ApprovedListInternalComGrid2/>} />
+        <Route path="/ApprovedListInternalCommunicationList/:id" element={<ApprovedListInternalCommunicationList/>} />
         <Route path="/CollateandSent" element={<CollateandSentforApproval/>} />
         <Route path="/CollateandSentForApproval/:id" element={<CollateandsentapprovalList/> }   />
       </Routes>
