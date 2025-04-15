@@ -1,5 +1,5 @@
 import React from 'react'
-import MTrainingCenterForm from '../../components/MTrainingCenterForm'
+import MTrainingCenterForm from '../../components/MasterComponent/MTrainingCenterForm'
 
 function MTrainingCenter() {
   return (

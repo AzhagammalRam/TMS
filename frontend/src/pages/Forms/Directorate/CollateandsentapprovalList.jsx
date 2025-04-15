@@ -1,6 +1,6 @@
 import React from 'react'
-import CollateandsentforApprovalListGrid from '../../components/collateandsentforApprovalListGrid'
-import NavBar from '../NavBar/DirectorateNavBar'
+import CollateandsentforApprovalListGrid from '../../../components/DirectorateComponent/CollateandsentforApprovalListGrid'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function CollateandsentapprovalList() {
   return (

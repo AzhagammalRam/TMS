@@ -1,6 +1,6 @@
 import React from 'react'
-import PublishCourseDetailsGrid from '../../components/PublishCourseDetailsGrid'
-import NavBar from '../NavBar/DirectorateNavBar'
+import PublishCourseDetailsGrid from '../../../components/DirectorateComponent/PublishCourseDetailsGrid'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function PublishCourseDetails() {
   return (

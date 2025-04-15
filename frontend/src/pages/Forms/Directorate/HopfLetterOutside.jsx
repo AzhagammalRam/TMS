@@ -1,6 +1,6 @@
 import React from 'react'
-import HopfLetterOutsideGrid from '../../components/HopfLetterOutsideGrid'
-import NavBar from '../NavBar/DirectorateNavBar'
+import HopfLetterOutsideGrid from '../../../components/DirectorateComponent/HopfLetterOutsideGrid'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function HopfLetterOutside() {
   return (

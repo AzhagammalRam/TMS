@@ -19,7 +19,7 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link href="/TrainingDirectorate">Home</Nav.Link>
-            <Nav.Link href="#action2">Data Bank</Nav.Link>
+            <Nav.Link href="/UploadIFHRMSData">Data Bank</Nav.Link>
             <Nav.Link href="/CreateCourse">Create & Publish Course</Nav.Link>
             <NavDropdown title="Masters" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/MTrainingCenter">Training Center</NavDropdown.Item>

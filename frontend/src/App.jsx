@@ -6,18 +6,18 @@ import TrainingDirectorate from './pages/Dashboards/TrainingDirectorate';
 import TrainingCenter from './pages/Dashboards/TrainingCenter';
 import DpoSpecialUnit from './pages/Dashboards/DpoSpecialUnit';
 import Igp from './pages/Dashboards/Igp';
-import CreateCourse from './pages/Forms/CreateCourse';
-import PublishCourseDetails from './pages/Forms/PublishCourseDetails';
-import CourseSummary from './pages/Forms/CourseSummary';
+import CreateCourse from './pages/Forms/Directorate/CreateCourse';
+import PublishCourseDetails from './pages/Forms/Directorate/PublishCourseDetails';
+import CourseSummary from './pages/Forms/Directorate/CourseSummary';
 import MTrainingCenter from './pages/Masters/MTrainingCenter';
-import UploadIFHRMSData from './pages/Forms/UploadIFHRMSData';
-import HopfLetterOutside from './pages/Forms/HopfLetterOutside';
-import HopfOutsideComUpload from './pages/Forms/HopfOutsideComUpload';
-import HopfOutsideComApproval from './pages/Forms/HopfOutsideComApproval';
-import ApprovedListInternalCom from './pages/Forms/ApprovedListInternalCom';
-import ApprovedListInternalCommunicationList from './pages/Forms/ApprovedListInternalCommunicationList';
-import CollateandSentforApproval from './pages/Forms/CollateandSentforApproval';
-import CollateandsentapprovalList from './pages/Forms/CollateandsentapprovalList';
+import UploadIFHRMSData from './pages/Forms/Directorate/UploadIFHRMSData';
+import HopfLetterOutside from './pages/Forms/Directorate/HopfLetterOutside';
+import HopfOutsideComUpload from './pages/Forms/Directorate/HopfOutsideComUpload';
+import HopfOutsideComApproval from './pages/Forms/Directorate/HopfOutsideComApproval';
+import ApprovedListInternalCom from './pages/Forms/Directorate/ApprovedListInternalCom';
+import ApprovedListInternalCommunicationList from './pages/Forms/Directorate/ApprovedListInternalCommunicationList';
+import CollateandSentforApproval from './pages/Forms/Directorate/CollateandSentforApproval';
+import CollateandsentapprovalList from './pages/Forms/Directorate/CollateandsentapprovalList';
 
 function App() {
   return (

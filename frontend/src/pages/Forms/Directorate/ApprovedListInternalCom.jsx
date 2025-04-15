@@ -1,6 +1,6 @@
 import React from 'react'
-import ApprovedListinternalComGrid from '../../components/ApprovedListinternalComGrid'
-import NavBar from '../NavBar/DirectorateNavBar'
+import ApprovedListinternalComGrid from '../../../components/DirectorateComponent/ApprovedListinternalComGrid'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function ApprovedListInternalCom() {
   return (

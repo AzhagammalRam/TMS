@@ -1,6 +1,6 @@
 import React from 'react'
-import CourseSummaryDetails from '../../components/CourseSummaryDetails'
-import NavBar from '../NavBar/DirectorateNavBar'
+import CourseSummaryDetails from '../../../components/DirectorateComponent/CourseSummaryDetails'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function CourseSummary() {
   return (

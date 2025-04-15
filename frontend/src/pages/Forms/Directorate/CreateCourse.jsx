@@ -1,6 +1,6 @@
 import React from 'react'
-import CreateCourseForm from '../../components/CreateCourseForm'
-import NavBar from '../NavBar/DirectorateNavBar'
+import CreateCourseForm from '../../../components/DirectorateComponent/CreateCourseForm'
+import NavBar from '../../NavBar/DirectorateNavBar'
 
 function CreateCourse() {
   return (

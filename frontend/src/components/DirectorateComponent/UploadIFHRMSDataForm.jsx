@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import * as XLSX from 'xlsx';
-import '../assets/css/excelUploader.css';
+import '../../assets/css/excelUploader.css';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { Box, Button, Typography } from '@mui/material';
 // import { BsCheckCircleFill } from "react-icons/bs"; // Bootstrap check icon
 
 function UploadIFHRMSDataForm() {
@@ -57,30 +58,48 @@ function UploadIFHRMSDataForm() {
                 </h4>
               </div>
               <div className="card-body">
-                <div className="col-md-12 row p-3">
-                  <div className="container text-center mt-5">
-                    <h3 className="mb-4">Upload Excel File</h3>
-                    <input
-                      type="file"
-                      accept=".xlsx, .xls"
-                      className="form-control mb-4"
-                      onChange={handleFileUpload}
-                    />
-                    {fileName && <h5 className='title-clr'>Success!! <strong>{fileName}</strong> Uploaded Successfully. </h5>}
+                <div className="row justify-content-center p-3">
+                  <div className="col-md-5 text-center mt-3">
+                    <Button
+                      className="mb-3"
+                      variant="contained"
+                      component="label"
+                      fullWidth
+                      sx={{ mt: 2 }}
+                    >
+                      Upload Files
+                      <input type="file" accept=".xlsx, .xls" hidden onChange={handleFileUpload} />
+                    </Button>
+
+                    {fileName && (
+                      <h5 className="title-clr">
+                        Success!! <strong>{fileName}</strong> Uploaded Successfully.
+                      </h5>
+                    )}
+
                     <div
-                      className="progress-circle"
+                      className="progress-circle mx-auto my-4"
                       style={{
                         background: `conic-gradient(#0d6efd ${progress}%, #e9ecef ${progress}%)`,
                       }}
                     >
-                      {!uploadDone ? <span>{progress}%</span> : <CheckCircleIcon style={{fontSize:"80px", color:"white"}} />}
+                      {!uploadDone ? (
+                        <span>{progress}%</span>
+                      ) : (
+                        <CheckCircleIcon style={{ fontSize: "80px", color: "white" }} />
+                      )}
                     </div>
 
-                    <div className='mt-5'><p><strong>Note:</strong> First time all data will be uploaded. From second time it will check the data base and upload only the Delta
-                    </p></div>
+                    <div className="mt-5">
+                      <p>
+                        <strong>Note:</strong> First time all data will be uploaded. From
+                        second time it will check the database and upload only the delta.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Button, IconButton, Tooltip } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import HopfLetterUploadModal from "./Modal/HopfLetterUploadModal";
+import HopfLetterUploadModal from "../Modal/HopfLetterUploadModal";
 import { useState } from "react";
 
 function HopfOutsideComUploadGrid() {
