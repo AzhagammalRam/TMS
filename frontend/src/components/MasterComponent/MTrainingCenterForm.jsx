@@ -18,11 +18,11 @@ function MTrainingCenterForm() {
                     <div className='col-md-5'><h6 className='title-clr pt-2'>Parent Organisation</h6></div>
                     <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-5 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Training Center Name</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-3 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>City</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
@@ -30,11 +30,11 @@ function MTrainingCenterForm() {
                       <div className='col-md-5'><h6 className='title-clr pt-2'>Address1</h6></div>
                       <div className='col-md-7'><Form.Control as="textarea" rows={2} /></div>
                     </div>
-                    <div className='col-md-5 row p-2'>
+                    <div className='col-md-4 row p-2'>
                       <div className='col-md-5'><h6 className='title-clr pt-2'>Address2</h6></div>
                       <div className='col-md-7'><Form.Control as="textarea" rows={2} /></div>
                     </div>
-                    <div className='col-md-3 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>State</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
@@ -42,11 +42,11 @@ function MTrainingCenterForm() {
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Pincode</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-5 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Contact Person</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-3 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Designation</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
@@ -54,17 +54,17 @@ function MTrainingCenterForm() {
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Phone No.with STD</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-5 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Mobile No</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-3 row p-2'>
+                    <div className='col-md-4 row p-2'>
                         <div className='col-md-5'><h6 className='title-clr pt-2'>Whatsapp No</h6></div>
                         <div className='col-md-7'><input type='text' className="form-control"  /></div>
                     </div>
-                    <div className='col-md-6 row p-2'>
-                        <div className='col-md-3'><h6 className='title-clr pt-2'>Comments</h6></div>
-                        <div className='col-md-9'><Form.Control as="textarea" rows={2} /></div>
+                    <div className='col-md-4 row p-2'>
+                        <div className='col-md-5'><h6 className='title-clr pt-2'>Comments</h6></div>
+                        <div className='col-md-7'><Form.Control as="textarea" rows={2} /></div>
                     </div>
                     </div>
                   <Row>
