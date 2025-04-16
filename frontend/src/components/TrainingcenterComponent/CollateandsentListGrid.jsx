@@ -95,7 +95,7 @@ function CollateandsentListGrid() {
               <div className="card-header">
                 <h4 className='title-clr'>
                   <i className="bi bi-table me-2"></i>
-                  Collate and Sent for Approval
+                  Collate and Send for Approval
                 </h4>
               </div>
               <div className="card-body">

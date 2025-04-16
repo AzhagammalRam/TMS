@@ -144,7 +144,7 @@ function TCCreateCourseForm() {
                     </div>
                   </div>
                   <Row>
-                    <Col dir="rtl" className='txt-align-center'><Button className="btn btn-success mb-2"><a   href='/CourseSummary' className='text-white'>Save</a></Button></Col>
+                    <Col dir="rtl" className='txt-align-center'><Button className="btn btn-success mb-2"><a   href='TCCourseSummary' className='text-white'>Save</a></Button></Col>
                   </Row>
                 </div>
               </div>

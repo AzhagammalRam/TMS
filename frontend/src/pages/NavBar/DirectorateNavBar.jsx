@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { logo } from '../../assets/images';
 import { Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function NavBar() {
@@ -18,11 +19,11 @@ function NavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/TrainingDirectorate">Home</Nav.Link>
-            <Nav.Link href="/UploadIFHRMSData">Data Bank</Nav.Link>
-            <Nav.Link href="/CreateCourse">Create & Publish Course</Nav.Link>
+            <Nav.Link as={Link} to="/TrainingDirectorate">Home</Nav.Link>
+            <Nav.Link as={Link} to="/UploadIFHRMSData">Data Bank</Nav.Link>
+            <Nav.Link as={Link} to="/CreateCourse">Create & Publish Course</Nav.Link>
             <NavDropdown title="Masters" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="/MTrainingCenter">Training Center</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/MTrainingCenter">Training Center</NavDropdown.Item>
               {/* <NavDropdown.Item href="#action4">
                 Another action
               </NavDropdown.Item>
@@ -31,9 +32,10 @@ function NavBar() {
                 Something else here
               </NavDropdown.Item> */}
             </NavDropdown>
-            <Nav.Link href="/HopfLetterOutside">HoPF</Nav.Link>
-            <Nav.Link href="/CollateandSent">Collate</Nav.Link>
-            <Nav.Link href="/ApprovedListInternalCommunication">Internal Communication</Nav.Link>
+            <Nav.Link as={Link} to="/HopfLetterOutside">HoPF</Nav.Link>
+            <Nav.Link as={Link} to="/CollateandSent">Collate</Nav.Link>
+            <Nav.Link as={Link} to="/ApprovedListInternalCommunication">Internal Communication</Nav.Link>
+            <Nav.Link as={Link} to="/DirectorateCCupload">Course Completion</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex me-2 title-clr"><Avatar style={{background:'#232771'}}/><h6 className='title-clr mt-2'>&nbsp;&nbsp;Training Directorate</h6></div>

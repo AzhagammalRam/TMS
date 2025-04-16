@@ -32,7 +32,7 @@ import TCCourseSummary from './pages/Forms/Trainingcenter/TCCourseSummary';
 
 function App() {
   return (
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/TMS/'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Login" element={<Login />} />

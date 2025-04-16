@@ -62,7 +62,7 @@ function CourseSummary() {
                     <div className='col-md-12 mt-3'>
                       <Row>
                         <Col  className='txt-align-right'><Button className="btn btn-success mb-2">Save</Button></Col>
-                        <Col  className='txt-align-left'><Button className="btn btn-info mb-2"><a href='/PublishCourseDetails' className='text-white'>Publish</a></Button></Col>
+                        <Col  className='txt-align-left'><Button className="btn btn-info mb-2"><a href='TCPublishCourseDetails' className='text-white'>Publish</a></Button></Col>
                       </Row>
                     </div>
                   </Card.Body>

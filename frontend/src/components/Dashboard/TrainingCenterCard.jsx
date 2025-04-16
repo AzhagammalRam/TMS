@@ -4,11 +4,11 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 function TrainingCenterCard() {
     const data = [
-        { name: "Create & Publish Course (Inside State)", cost: 10, grad: " #f7256e, #cc0c48" },
-        { name: "Collate Shortlisted List for Approval", cost: 5, grad: " #f7ea1f, #f87d2c" },
-        { name: "Approved List internal Communication", cost: 19, grad: " #f280b6, #f72589" },
-        { name: "Course Completion Certificate Upload", cost: 29, grad: " #9ad366, #8df82c" },
-        { name: "Status Tracking", cost: 29, grad: " #a16ac1, #d191f6" },
+        { name: "Create & Publish Course (Inside State)", cost: 10, grad: " #f7256e, #cc0c48",path:"TCCreateCourse" },
+        { name: "Collate Shortlisted List for Approval", cost: 5, grad: " #f7ea1f, #f87d2c",path:"TCCollateandsent" },
+        { name: "Approved List internal Communication", cost: 19, grad: " #f280b6, #f72589",path:"TCApprovedListInternalCom" },
+        { name: "Course Completion Certificate Upload", cost: 29, grad: " #9ad366, #8df82c",path:"TCCCupload" },
+        { name: "Status Tracking", cost: 29, grad: " #a16ac1, #d191f6",path:"TrainingCenter" },
       ];
       const n = data.length;
 
@@ -30,7 +30,7 @@ function TrainingCenterCard() {
           <h5 data-name={c.name}>{c.name}</h5>
           </header>
           <section>
-            <button><ArrowCircleRightIcon color="secondary" fontSize="large"/></button>
+            <button><a href={c.path}><ArrowCircleRightIcon color="secondary" fontSize="large"/></a></button>
           </section>
         </article>
       ))}

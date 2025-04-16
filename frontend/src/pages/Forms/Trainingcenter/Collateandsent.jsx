@@ -1,9 +1,12 @@
 import React from 'react'
 import CollateandsentListGrid from '../../../components/TrainingcenterComponent/CollateandsentListGrid'
+import CenterNavBar from '../../NavBar/CenterNavBar'
 
 function Collateandsent() {
   return (
-    <div className='container'><CollateandsentListGrid/></div>
+    <><CenterNavBar />
+     <div className='container'><CollateandsentListGrid/></div>
+     </>
   )
 }
 

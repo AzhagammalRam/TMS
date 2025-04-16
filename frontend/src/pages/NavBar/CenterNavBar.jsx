@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { logo } from '../../assets/images';
 import { Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 function CenterNavBar() {
@@ -18,22 +19,11 @@ function CenterNavBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/TrainingDirectorate">Home</Nav.Link>
-            <Nav.Link href="#action2">Data Bank</Nav.Link>
-            <Nav.Link href="/CreateCourse">Create & Publish Course</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+            <Nav.Link as={Link} to="/TrainingCenter">Home</Nav.Link>
+            <Nav.Link as={Link} to="/TCCreateCourse">Create & Publish Course</Nav.Link>
+            <Nav.Link as={Link} to="/TCCollateandsent">Collate</Nav.Link>
+            <Nav.Link as={Link} to="/TCApprovedListInternalCom">Internal Communication</Nav.Link>
+            <Nav.Link as={Link} to="/TCCCupload">Course Completion</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <div className="d-flex me-2 title-clr"><Avatar style={{background:'#232771'}}/><h6 className='title-clr mt-2'>&nbsp;&nbsp;Training Center</h6></div>
