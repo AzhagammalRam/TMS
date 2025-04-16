@@ -18,6 +18,9 @@ import ApprovedListInternalCom from './pages/Forms/Directorate/ApprovedListInter
 import ApprovedListInternalCommunicationList from './pages/Forms/Directorate/ApprovedListInternalCommunicationList';
 import CollateandSentforApproval from './pages/Forms/Directorate/CollateandSentforApproval';
 import CollateandsentapprovalList from './pages/Forms/Directorate/CollateandsentapprovalList';
+import DownloadTemplate from './pages/Forms/Directorate/DownloadTemplate';
+import SendProfile from './pages/Forms/Directorate/SendProfile';
+import DataBankCRUD from './pages/Forms/Directorate/DataBankCRUD';
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <Route path="/ApprovedListInternalCommunicationList/:id" element={<ApprovedListInternalCommunicationList/>} />
         <Route path="/CollateandSent" element={<CollateandSentforApproval/>} />
         <Route path="/CollateandSentForApproval/:id" element={<CollateandsentapprovalList/> }   />
+        <Route path="/DownloadTemplate" element={<DownloadTemplate />} />
+        <Route path='/SendProfile' element={<SendProfile /> } />
+        <Route path="/DataBankCRUD" element={ <DataBankCRUD /> } />
       </Routes>
     </BrowserRouter>
   )
