@@ -2,12 +2,12 @@ import React from 'react';
 import { DataGrid } from "@mui/x-data-grid";
 
 
-function CollateandsentforApprovalListGrid() {
+function CollateandsentListGrid() {
     const counterData = [
         {
             id: 1,
             title:"Training Center",
-            name:"Training Bhopal",
+            name:"Vellore",
             color:"primary",
         },
         {
@@ -26,7 +26,7 @@ function CollateandsentforApprovalListGrid() {
             id: 4,
             title:"Nominations",
             name:"10",
-            color:"info",
+            color:"light",
         },
     ]
    
@@ -102,7 +102,7 @@ function CollateandsentforApprovalListGrid() {
                 <div className="col-md-12 row p-3">
                   <div className='col-md-12 row'>
                     <div className='col-md-12'>
-                          <h3 className='txtred border-2'>Course ID: Bhopal/CybSec/042025/020
+                          <h3 className='txtred border-2'>Course ID: Vellore/CybSec/042025/020
                           </h3>
                     </div>
                   </div>
@@ -154,4 +154,4 @@ function CollateandsentforApprovalListGrid() {
   );
 }
 
-export default CollateandsentforApprovalListGrid;
+export default CollateandsentListGrid;

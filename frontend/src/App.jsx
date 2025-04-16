@@ -15,12 +15,20 @@ import HopfLetterOutside from './pages/Forms/Directorate/HopfLetterOutside';
 import HopfOutsideComUpload from './pages/Forms/Directorate/HopfOutsideComUpload';
 import HopfOutsideComApproval from './pages/Forms/Directorate/HopfOutsideComApproval';
 import ApprovedListInternalCom from './pages/Forms/Directorate/ApprovedListInternalCom';
+import TCApprovedListInternalCom from './pages/Forms/Trainingcenter/TCApprovedListInternalCom';
 import ApprovedListInternalCommunicationList from './pages/Forms/Directorate/ApprovedListInternalCommunicationList';
 import CollateandSentforApproval from './pages/Forms/Directorate/CollateandSentforApproval';
 import CollateandsentapprovalList from './pages/Forms/Directorate/CollateandsentapprovalList';
 import DownloadTemplate from './pages/Forms/Directorate/DownloadTemplate';
 import SendProfile from './pages/Forms/Directorate/SendProfile';
 import DataBankCRUD from './pages/Forms/Directorate/DataBankCRUD';
+import CCCertificateUpload from './pages/Forms/Directorate/CCCertificateUpload';
+import CourseCertificateUpload from './pages/Forms/Trainingcenter/CourseCertificateUpload';
+import Collateandsent from './pages/Forms/Trainingcenter/Collateandsent';
+import TCApprovedListIntCom from './pages/Forms/Trainingcenter/TCApprovedListIntCom';
+import TCCreateCourse from './pages/Forms/Trainingcenter/TCCreateCourse';
+import TCPublishCourse from './pages/Forms/Trainingcenter/TCPublishCourse';
+import TCCourseSummary from './pages/Forms/Trainingcenter/TCCourseSummary';
 
 function App() {
   return (
@@ -47,6 +55,15 @@ function App() {
         <Route path="/DownloadTemplate" element={<DownloadTemplate />} />
         <Route path='/SendProfile' element={<SendProfile /> } />
         <Route path="/DataBankCRUD" element={ <DataBankCRUD /> } />
+        <Route path="/DirectorateCCupload" element={<CCCertificateUpload/>  } />  
+        <Route path="/TCCCupload" element={<CourseCertificateUpload/>} />
+        <Route path='/TCCollateandsent' element={<Collateandsent/>} />
+        <Route path='/TCApprovedListInternalCom' element={<TCApprovedListInternalCom/>} />
+        <Route path='/TCApprovedListInternalCom/:id' element={<TCApprovedListIntCom/> } />
+        <Route path='/TCCreateCourse' element={<TCCreateCourse/>} />
+        <Route path='/TCPublishCourseDetails' element={<TCPublishCourse/>} />
+        <Route path='/TCCourseSummary' element={<TCCourseSummary/>} />
+
       </Routes>
     </BrowserRouter>
   )
