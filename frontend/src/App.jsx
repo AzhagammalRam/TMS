@@ -33,6 +33,13 @@ import SendProfileEndUser from './pages/Forms/Directorate/SendProfileEndUser';
 import DpoDownloadtemplate from './pages/Forms/Dpo/DpoDownloadtemplate';
 import DpoUploadExcel from './pages/Forms/Dpo/DpoUploadExcel';
 import DpoDatabankCRUD from './pages/Forms/Dpo/DpoDatabankCRUD';
+import MasterTrainingCenter from './pages/Masters/Directorate/MasterTrainingCenter';
+import MasterLocations from './pages/Masters/Directorate/MasterLocations';
+import MasterRank from './pages/Masters/Directorate/MasterRank';
+import MasterQualifications from './pages/Masters/Directorate/MasterQualifications';
+import MasterModeOfReceiving from './pages/Masters/Directorate/MasterModeOfReceiving';
+import MasterDocumentType from './pages/Masters/Directorate/MasterDocumentType';
+import MasterPublishTo from './pages/Masters/Directorate/MasterPublishTo';
 
 function App() {
   return (
@@ -71,6 +78,13 @@ function App() {
         <Route path='/DpoDownloadTemplate' element={<DpoDownloadtemplate /> } />
         <Route path='/DpoUploadExcel' element={<DpoUploadExcel />} />
         <Route path='/DpoDatabankCRUD' element={<DpoDatabankCRUD /> } />
+        <Route path='/masterTrainingCenter' element={<MasterTrainingCenter />} />
+        <Route path='/masterLocations' element={<MasterLocations />}/>
+        <Route path='/masterRank' element={<MasterRank />}/>
+        <Route path='/masterQualification' element={<MasterQualifications />}/>
+        <Route path='/masterModeofReceiving' element={<MasterModeOfReceiving />}/>
+        <Route path='/masterDocumentType' element={<MasterDocumentType />}/>
+        <Route path='/masterPublishTo' element={<MasterPublishTo />}/>
       </Routes>
     </BrowserRouter>
   )
