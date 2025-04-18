@@ -29,6 +29,10 @@ import TCApprovedListIntCom from './pages/Forms/Trainingcenter/TCApprovedListInt
 import TCCreateCourse from './pages/Forms/Trainingcenter/TCCreateCourse';
 import TCPublishCourse from './pages/Forms/Trainingcenter/TCPublishCourse';
 import TCCourseSummary from './pages/Forms/Trainingcenter/TCCourseSummary';
+import SendProfileEndUser from './pages/Forms/Directorate/SendProfileEndUser';
+import DpoDownloadtemplate from './pages/Forms/Dpo/DpoDownloadtemplate';
+import DpoUploadExcel from './pages/Forms/Dpo/DpoUploadExcel';
+import DpoDatabankCRUD from './pages/Forms/Dpo/DpoDatabankCRUD';
 
 function App() {
   return (
@@ -63,7 +67,10 @@ function App() {
         <Route path='/TCCreateCourse' element={<TCCreateCourse/>} />
         <Route path='/TCPublishCourseDetails' element={<TCPublishCourse/>} />
         <Route path='/TCCourseSummary' element={<TCCourseSummary/>} />
-
+        <Route path='/SendProfileEndUser' element={<SendProfileEndUser />} />
+        <Route path='/DpoDownloadTemplate' element={<DpoDownloadtemplate /> } />
+        <Route path='/DpoUploadExcel' element={<DpoUploadExcel />} />
+        <Route path='/DpoDatabankCRUD' element={<DpoDatabankCRUD /> } />
       </Routes>
     </BrowserRouter>
   )

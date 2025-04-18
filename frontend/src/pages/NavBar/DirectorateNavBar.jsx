@@ -20,7 +20,12 @@ function NavBar() {
             navbarScroll
           >
             <Nav.Link as={Link} to="/TrainingDirectorate">Home</Nav.Link>
-            <Nav.Link as={Link} to="/UploadIFHRMSData">Data Bank</Nav.Link>
+            <NavDropdown title="Data Bank" id="navbarScrollingDropdown">
+                <NavDropdown.Item as={Link} to="/DatabankCRUD">Add / Edit / Delete Profile</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Downloadtemplate">Download Template</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/UploadIFHRMSData">Upload Excel</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/SendProfile">Send Profile</NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link as={Link} to="/CreateCourse">Create & Publish Course</Nav.Link>
             <NavDropdown title="Masters" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/MTrainingCenter">Training Center</NavDropdown.Item>
