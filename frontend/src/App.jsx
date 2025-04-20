@@ -39,6 +39,13 @@ import AddProfile from './pages/Forms/Directorate/AddProfile';
 import DpoAddProfile from './pages/Forms/Dpo/DpoAddProfile';
 import NominationShortList from './pages/Forms/Dpo/NominationShortList';
 import ViewNominationList from './pages/Forms/Dpo/ViewNominationList';
+import MasterTrainingCenter from './pages/Masters/Directorate/MasterTrainingCenter';
+import MasterLocations from './pages/Masters/Directorate/MasterLocations';
+import MasterRank from './pages/Masters/Directorate/MasterRank';
+import MasterQualifications from './pages/Masters/Directorate/MasterQualifications';
+import MasterModeOfReceiving from './pages/Masters/Directorate/MasterModeOfReceiving';
+import MasterDocumentType from './pages/Masters/Directorate/MasterDocumentType';
+import MasterPublishTo from './pages/Masters/Directorate/MasterPublishTo';
 
 function App() {
   return (
@@ -83,6 +90,13 @@ function App() {
         <Route path='/DpoAddProfile' element={<DpoAddProfile />} />
         <Route path='/NominationShortList' element={<NominationShortList /> } />
         <Route path='/ViewNominationList' element={<ViewNominationList /> } /> 
+        <Route path='/masterTrainingCenter' element={<MasterTrainingCenter />} />
+        <Route path='/masterLocations' element={<MasterLocations />}/>
+        <Route path='/masterRank' element={<MasterRank />}/>
+        <Route path='/masterQualification' element={<MasterQualifications />}/>
+        <Route path='/masterModeofReceiving' element={<MasterModeOfReceiving />}/>
+        <Route path='/masterDocumentType' element={<MasterDocumentType />}/>
+        <Route path='/masterPublishTo' element={<MasterPublishTo />}/>
       </Routes>
     </BrowserRouter>
   )
