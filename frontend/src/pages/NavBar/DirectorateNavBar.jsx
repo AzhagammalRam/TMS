@@ -29,13 +29,12 @@ function NavBar() {
             <Nav.Link as={Link} to="/CreateCourse">Create & Publish Course</Nav.Link>
             <NavDropdown title="Masters" id="navbarScrollingDropdown">
               <NavDropdown.Item as={Link} to="/MTrainingCenter">Training Center</NavDropdown.Item>
-              {/* <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item> */}
+              <NavDropdown.Item as={Link} to="/masterLocations">Locations</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/masterRank">Rank</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/masterQualification">Qualifications</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/masterModeofReceiving">Mode of Receiving</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/masterDocumentType">Document Type</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/masterPublishTo">Publish To</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/HopfLetterOutside">HoPF</Nav.Link>
             <Nav.Link as={Link} to="/CollateandSent">Collate</Nav.Link>
