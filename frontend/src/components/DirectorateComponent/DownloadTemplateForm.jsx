@@ -21,7 +21,7 @@ function DownloadTemplateForm() {
                     <Card className='p-5 bg-gray'>
                   <h6><Link to="/SendProfile" ><FaPaperPlane />&nbsp;&nbsp;Send Profile Update Link </Link></h6>
                   <br></br>
-                  <h6><Link to="/" ><FaPlus />&nbsp;&nbsp; Add profile </Link></h6></Card>
+                  <h6><Link to="#" ><FaPlus />&nbsp;&nbsp; Add / Edit Profile </Link></h6></Card>
                   </div>
                 </div>
               </div>

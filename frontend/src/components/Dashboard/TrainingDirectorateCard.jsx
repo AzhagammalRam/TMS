@@ -10,6 +10,8 @@ function TrainingDirectorateCard() {
         { name: "HoPF and Outside State Communication", cost: 9, grad: " #5eefea, #0c9f9a",path:"HopfLetterOutside" },
         { name: "Approved List internal Communication", cost: 19, grad: " #f280b6, #f72589" ,path:"ApprovedListInternalCommunication" },
         { name: "Course Completion Certificate Upload", cost: 29, grad: " #9ad366, #8df82c",path:"DirectorateCCupload" },
+        { name: "Reschedule/Cancel", cost: 29, grad: " #566df6, #3936ef",path:"TrainingDirectorate" },
+        { name: "Feedback from Personnel on Course", cost: 29, grad: " #f7d2cd, #ef3e09",path:"TrainingDirectorate" },
         { name: "Status Tracking", cost: 29, grad: " #a16ac1, #d191f6",path:"TrainingDirectorate" },
       ];
       const n = data.length;

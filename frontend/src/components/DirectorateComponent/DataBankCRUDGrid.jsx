@@ -28,17 +28,17 @@ function DataBankCRUDGrid() {
         <div>
           {params.value?.btn1 && (
             <Button variant="contained" color="primary" onClick={() => handleAction(params.row, "Publish")}>
-              <a href='/CreateCourse' className='text-white'><FaPlus /></a>
+              <a href='AddProfile' className='text-white'><FaPlus /></a>
             </Button>
           )}&nbsp;
           {params.value?.btn2 && (
             <Button variant="contained" color="secondary" onClick={() => handleAction(params.row, "Publish")}>
-              <a href='/CreateCourse' className='text-white'><FaEdit /></a>
+              <a href='AddProfile' className='text-white'><FaEdit /></a>
             </Button>
           )}&nbsp;
           {params.value?.btn3 && (
             <Button variant="contained" color="error" onClick={() => handleAction(params.row, "Publish")}>
-              <a href='/CreateCourse' className='text-white'><FaTrash /></a>
+              <a href='#' className='text-white'><FaTrash /></a>
             </Button>
           )}
         </div>

@@ -5,9 +5,9 @@ import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 function DpoCard() {
     const data = [
         { name: "Data Bank", cost: 10, grad: "#0fcf7b, #0c9f30",path:"DataBankCRUD" },
-        { name: "Call for Nominations from Personnel", cost: 19, grad: " #f7256e, #cc0c48",path:"CreateCourse" },
+        // { name: "Call for Nominations from Personnel", cost: 19, grad: " #f7256e, #cc0c48",path:"CreateCourse"},
         { name: "Shortlist List for Nomination", cost: 29, grad: " #f7ea1f, #f87d2c",path:"CollateandSent" },
-        { name: "Feedback from Personnel on course", cost: 9, grad: " #5eefea, #0c9f9a",path:"HopfLetterOutside" },
+        // { name: "Feedback from Personnel on course", cost: 9, grad: " #5eefea, #0c9f9a",path:"HopfLetterOutside" },
         { name: "Reports", cost: 19, grad: " #f280b6, #f72589" ,path:"ApprovedListInternalCommunication" },
       ];
       const n = data.length;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { FaCheck, FaEdit, FaPlus, FaTrash } from 'react-icons/fa';
+import { FaCheck, FaEdit, FaPlus, FaTrash, FaUpload } from 'react-icons/fa';
 
 function DpoDatabankCRUDGrid() {
   const columns = [
@@ -26,17 +26,17 @@ function DpoDatabankCRUDGrid() {
         <div>
             {params.value?.btn1 && (
             <Button variant="contained" color="primary" onClick={() => handleAction(params.row, "Publish")}>
-                <a href='/' className='text-white'><FaPlus /></a>
+                <a href='DpoAddProfile' className='text-white'><FaPlus /></a>
             </Button>
             )}&nbsp;
             {params.value?.btn2 && (
             <Button variant="contained" color="secondary" onClick={() => handleAction(params.row, "Publish")}>
-                <a href='/' className='text-white'><FaEdit /></a>
+                <a href='#' className='text-white'><FaEdit /></a>
             </Button>
             )}&nbsp;
             {params.value?.btn3 && (
             <Button variant="contained" color="error" onClick={() => handleAction(params.row, "Publish")}>
-                <a href='/' className='text-white'><FaTrash /></a>
+                <a href='#' className='text-white'><FaTrash /></a>
             </Button>
             )}
         </div>
@@ -112,6 +112,13 @@ function DpoDatabankCRUDGrid() {
                   <div className='col-md-2 row'>
                     <button className='btn btn-danger'><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;
                     Search</button>
+                  </div>
+                  <div className='col-md-2 mt-2 row txt-align-center'>
+                    <h6 className='title-clr'>OR</h6>
+                  </div>
+                  <div className='col-md-2 ms-2 row '>
+                    <button className='btn btn-info text-white'><FaUpload />&nbsp;&nbsp;
+                      Upload Excel</button>
                   </div>
                 </div>
                 <div className="table-responsive p-3">

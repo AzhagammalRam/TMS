@@ -24,8 +24,8 @@ function DpoNavBar() {
                     <NavDropdown.Item as={Link} to="/DpoDownloadtemplate">Download Template</NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/DpoUploadExcel">Upload Excel</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link as={Link} to="/CreateCourse">Personal Nomination</Nav.Link>
-                <Nav.Link as={Link} to="/HopfLetterOutside">Nomination Shortlist</Nav.Link>
+                {/* <Nav.Link as={Link} to="/CreateCourse">Personal Nomination</Nav.Link> */}
+                <Nav.Link as={Link} to="/NominationShortList">Nomination Shortlist</Nav.Link>
                 <Nav.Link as={Link} to="/CollateandSent">Course Feedback</Nav.Link>
                 <Nav.Link as={Link} to="/ApprovedListInternalCommunication">Reports</Nav.Link>
             </Nav>

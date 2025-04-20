@@ -1,8 +1,13 @@
 import React from 'react'
+import IgpNavBar from '../NavBar/IgpNavBar'
 
 function Igp() {
   return (
-    <div>Igp</div>
+    <>
+    <IgpNavBar />
+    <div className='container'>Dashboard Under Construction!</div>
+    </>
+    
   )
 }
 

@@ -33,6 +33,12 @@ import SendProfileEndUser from './pages/Forms/Directorate/SendProfileEndUser';
 import DpoDownloadtemplate from './pages/Forms/Dpo/DpoDownloadtemplate';
 import DpoUploadExcel from './pages/Forms/Dpo/DpoUploadExcel';
 import DpoDatabankCRUD from './pages/Forms/Dpo/DpoDatabankCRUD';
+import IgpApproval from './pages/Forms/Igp/IgpApproval';
+import IgpApprovalSummary from './pages/Forms/Igp/IgpApprovalSummary';
+import AddProfile from './pages/Forms/Directorate/AddProfile';
+import DpoAddProfile from './pages/Forms/Dpo/DpoAddProfile';
+import NominationShortList from './pages/Forms/Dpo/NominationShortList';
+import ViewNominationList from './pages/Forms/Dpo/ViewNominationList';
 
 function App() {
   return (
@@ -71,6 +77,12 @@ function App() {
         <Route path='/DpoDownloadTemplate' element={<DpoDownloadtemplate /> } />
         <Route path='/DpoUploadExcel' element={<DpoUploadExcel />} />
         <Route path='/DpoDatabankCRUD' element={<DpoDatabankCRUD /> } />
+        <Route path='/IgpApproval' element={<IgpApproval /> } />
+        <Route path='/IgpApprovalSummary' element={<IgpApprovalSummary />} />
+        <Route path='/AddProfile' element={<AddProfile />} />
+        <Route path='/DpoAddProfile' element={<DpoAddProfile />} />
+        <Route path='/NominationShortList' element={<NominationShortList /> } />
+        <Route path='/ViewNominationList' element={<ViewNominationList /> } /> 
       </Routes>
     </BrowserRouter>
   )

@@ -21,9 +21,9 @@ function NavBar() {
           >
             <Nav.Link as={Link} to="/TrainingDirectorate">Home</Nav.Link>
             <NavDropdown title="Data Bank" id="navbarScrollingDropdown">
+            <NavDropdown.Item as={Link} to="/UploadIFHRMSData">Upload IFHRMS Data</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/DatabankCRUD">Add / Edit / Delete Profile</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/Downloadtemplate">Download Template</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/UploadIFHRMSData">Upload Excel</NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/SendProfile">Send Profile</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/CreateCourse">Create & Publish Course</Nav.Link>

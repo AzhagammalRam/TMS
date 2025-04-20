@@ -1,15 +1,11 @@
-import React,{useState} from 'react';
-import { Button, IconButton, Tooltip } from "@mui/material";
+import React from 'react'
+import { Button } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import CloudUploadIcon from '@mui/icons-material/CloudUpload';
-import DirecterateCCUploadModal from '../Modal/DirecterateCCUploadModal';
+import { FaEdit, FaEye } from 'react-icons/fa';
 
+function IgpApprovalGrid() {
+// Dummy data
 
-
-function CCCertificateUploadGrid() {
-       const [modalOpen, setModalOpen] = useState(false);
-
- 
   const columns = [
     { field: "id", headerName: "S.No", width: 70 },
     { field: "courseName", headerName: "Course Name", width: 180 },
@@ -21,9 +17,9 @@ function CCCertificateUploadGrid() {
     { field: "email", headerName: "Email ID", width: 180 },
     { field: "fromDate", headerName: "From Date", width: 180 },
     { field: "toDate", headerName: "To Date", width: 180 },
-    { field: "noOfDays", headerName: "No. of Days", width: 120 },
-    { field: "status", headerName: "Status", width: 180 },
-    { field: "coursecompletiondate", headerName: "Course Completion Date ", width: 180 },
+    { field: "noOfDays", headerName: "No. of Days", width: 180 },
+    { field: "status", headerName: "Status", width: 120 },
+    { field: "keywords", headerName: "Keywords", width: 180 },
     {
       field: "action",
       headerName: "Actions",
@@ -31,17 +27,14 @@ function CCCertificateUploadGrid() {
       renderCell: (params) => (
         <div>
           {params.value?.btn1 && (
-            <>
-              <Tooltip title="Upload">
-                <IconButton
-                  color="primary"
-                  onClick={() => setModalOpen(true)}
-                >
-                  <CloudUploadIcon />
-                </IconButton>
-              </Tooltip>
-             
-            </>
+            <Button variant="contained" color="primary" onClick={() => handleAction(params.row, "Publish")}>
+            <a href='IgpApprovalSummary' className='text-white'><FaEye /></a>
+            </Button>
+          )}&nbsp;
+          {params.value?.btn2 && (
+            <Button variant="contained" color="warning" onClick={() => handleAction(params.row, "Publish")}>
+            <a href='#' className='text-white'><FaEdit /></a>
+            </Button>
           )}
         </div>
       ),
@@ -61,9 +54,9 @@ function CCCertificateUploadGrid() {
       fromDate: "2024-04-01",
       toDate: "2024-04-05",
       noOfDays: 5,
-      status: "Course Completed",
-      coursecompletiondate: "2024-04-10",
-      action: { btn1: "Upload" },
+      status: "Pending",
+      keywords: "basic, safety",
+      action: { btn1: "view", btn2:"edit" },
     },
     {
       id: 2,
@@ -77,17 +70,12 @@ function CCCertificateUploadGrid() {
       fromDate: "2024-04-06",
       toDate: "2024-04-10",
       noOfDays: 5,
-      status: "Course Completed",
-      coursecompletiondate: "2024-04-10",
-      action: { btn1: "Upload"},
+      status: "Approved",
+      keywords: "fire, safety",
+      action: { btn1: "view", btn2:"edit" },
     },
-  ]; 
-
-  const handleUploadSubmit = (formData) => {
-    // Send formData to backend via axios/fetch
-    console.log('Submitting formData:', formData);
-  };
-
+    // Add others similarly
+  ];
 
   return (
     <main className="pt-3">
@@ -96,28 +84,16 @@ function CCCertificateUploadGrid() {
           <div className="col-md-12 mb-3">
             <div className="card bg-white">
               <div className="card-header">
-                <h4 className='title-clr'>
-                  <i className="bi bi-table me-2"></i>
-                  Course Completion Certificate Upload
-                </h4>
+                <h4 className='title-clr'><i className="bi bi-table me-2"></i> IGP Approval</h4>
               </div>
               <div className="card-body">
                 <div className="col-md-12 row p-3">
                   <div className='col-md-5 row'>
-                    <div className='col-md-12'>
-                      <input
-                        type='text'
-                        className="form-control"
-                        name="search"
-                        placeholder='Search by course'
-                      />
-                    </div>
+                    <div className='col-md-12'><input type='text' className="form-control" name="search" placeholder='Search by course, training center, location, date'/></div>
                   </div>
                   <div className='col-md-2 row'>
-                    <button className='btn btn-danger'>
-                      <i className="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;
-                      Search
-                    </button>
+                    <button className='btn btn-danger'><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;
+                    Search</button>
                   </div>
                 </div>
                 <div className="table-responsive p-3">
@@ -131,8 +107,6 @@ function CCCertificateUploadGrid() {
                         },
                       },
                     }}
-                    pageSizeOptions={[10]}
-                    autoHeight
                   />
                 </div>
               </div>
@@ -140,12 +114,8 @@ function CCCertificateUploadGrid() {
           </div>
         </div>
       </div>
-      <DirecterateCCUploadModal
-       open={modalOpen}
-       handleClose={() => setModalOpen(false)}
-       handleSubmit={handleUploadSubmit} />
     </main>
-  );
+  )
 }
 
-export default CCCertificateUploadGrid;
+export default IgpApprovalGrid
