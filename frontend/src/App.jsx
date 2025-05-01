@@ -46,6 +46,8 @@ import MasterQualifications from './pages/Masters/Directorate/MasterQualificatio
 import MasterModeOfReceiving from './pages/Masters/Directorate/MasterModeOfReceiving';
 import MasterDocumentType from './pages/Masters/Directorate/MasterDocumentType';
 import MasterPublishTo from './pages/Masters/Directorate/MasterPublishTo';
+import Filter from './components/filter/Filter';
+import FetchedDetails from './components/fetched-details/FetchedDetails';
 
 function App() {
   return (
@@ -97,6 +99,8 @@ function App() {
         <Route path='/masterModeofReceiving' element={<MasterModeOfReceiving />}/>
         <Route path='/masterDocumentType' element={<MasterDocumentType />}/>
         <Route path='/masterPublishTo' element={<MasterPublishTo />}/>
+        <Route path='/fetcheddetails' element={<FetchedDetails/>} />
+        <Route path='/filter'  element={<Filter/>} />
       </Routes>
     </BrowserRouter>
   )
